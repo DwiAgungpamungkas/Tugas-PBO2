@@ -1,17 +1,35 @@
-// Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
-// then press Enter. You can now see whitespace characters in your code.
-public class Main {
-    public static void main(String[] args) {
-        // Press Alt+Enter with your caret at the highlighted text to see how
-        // IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
+// NO 1
+//public class Main {
+    // check kilobyte and Mega byte
+//    public static String calculateKilobyteandMegabyte(int KilobyteandMegabyte) {
+//        if (KilobyteandMegabyte > 2500){
+//            return "2MB and 452KB";
+//        } else if (KilobyteandMegabyte < 0) {
+//            return "Invalid Value" ;
+//        } if (KilobyteandMegabyte > 5000) {
+//            return "4MB and 904KB" ;
+//        }
+//        return "4MB and 904";
+//    }
+//    public static void main(String[] args) {
 
-        // Press Shift+F10 or click the green arrow button in the gutter to run the code.
-        for (int i = 1; i <= 5; i++) {
+//        System.out.println(calculateKilobyteandMegabyte(3000)); // Should print "2MB and 952KB"
+//        System.out.println(calculateKilobyteandMegabyte(-100)); // Should print "5MB and 1024B"
+//        System.out.println(calculateKilobyteandMegabyte(0)); // Should print "Invalid Value"
+//    }
+//    }
+    // No 2
+    public class Main {
+        public static boolean hasEqualSum(int num1, int num2, int sum) {
+            return (num1 + num2) == sum;
+        }
 
-            // Press Shift+F9 to start debugging your code. We have set one breakpoint
-            // for you, but you can always add more by pressing Ctrl+F8.
-            System.out.println("i = " + i);
+        public static void main(String[] args) {
+            System.out.println(hasEqualSum(1, 1, 1));
+            System.out.println(hasEqualSum(1, 1, 2));
+            System.out.println(hasEqualSum(1, -1, 0));
         }
     }
-}
+
+    
+
